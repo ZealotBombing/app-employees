@@ -23,4 +23,14 @@ export class AppComponent {
 
 
   ];
+  formName: string = "";
+  formLastName: string = "";
+  formPosition: string = "";
+  formSalary: number = 0;
+
+  addEmployee(){
+    let myEmployee = new Employee(this.formName,  this.formLastName, this.formPosition, this.formSalary);
+    
+    this.employees.push(myEmployee)
+  }
 }

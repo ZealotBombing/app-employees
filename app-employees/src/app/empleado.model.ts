@@ -13,5 +13,6 @@ export class Employee{
     lastName: string = "";
     position: string = "";
     salary: number = 0;
+
     
 }
