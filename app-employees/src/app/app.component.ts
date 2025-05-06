@@ -3,10 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Employee } from './empleado.model';
 import { NgFor } from '@angular/common';
+import { EmployeeChildCComponent } from "./employee-child-c/employee-child-c.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, NgFor],
+  imports: [RouterOutlet, FormsModule, NgFor, EmployeeChildCComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

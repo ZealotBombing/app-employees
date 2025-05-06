@@ -33,12 +33,6 @@
 <br>
 <br>
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div *ngFor="let employee of employees; let i = index ">
-       {{i+1}}.- {{employee.name}} {{employee.lastName}} {{employee.position}} {{employee.salary}}
-      </div>
-    </div>
-  </div>
-</div>
+<app-employee-child-c *ngFor="let employee of employees; let i = index" [listEmployee] ="employee" [index] ="i">
+
+</app-employee-child-c>
