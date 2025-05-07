@@ -5,5 +5,11 @@
                 {{index+1}}.- {{listEmployee.name}} {{listEmployee.lastName}} {{listEmployee.position}} {{listEmployee.salary}}
             </div>
         </div>
+
+        <app-employees-char (newItemEvent)="addItem($event)"></app-employees-char>
+
+        <ul style="list-style: none;">
+            <li *ngFor="let item of items">{{item}}</li>
+          </ul>
     </div>
 </div>
